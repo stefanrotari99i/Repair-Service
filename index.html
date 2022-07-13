@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Service -</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,900;1,900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/incl/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Scripts -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+<!-- Modal -->
+    <div class="modal-bg" hidden="hidden">
+    </div>
+    <div class="modal" hidden="hidden">
+        <i class="bi bi-x modal__close"></i>
+        <p class="modal__title">Schedule Auto Service</p>
+        <p class="modal__subtitle">To schedule an appointment give us a call at <a href="tel:+0011223344">00 11 22 33 44</a> or fill out the form below with your information and requested services.</p>
+        <form action="" class="modal__form">
+            <div class="modal__wrapp">
+                <div class="modal__form-wrapp">
+                    <p class="modal__caption">Contact Info</p>
+                    <input type="text" class="modal__input" placeholder="Your name">
+                    <input type="tel" class="modal__input" placeholder="Phone number">
+                    <input type="email" class="modal__input" placeholder="E-mail">
+                </div>
+                <div class="modal__form-wrapp">
+                    <p class="modal__caption">Car Detail</p>
+                    <input type="text" class="modal__input" placeholder="Vehicle make">
+                    <input type="text" class="modal__input" placeholder="Vehicle model">
+                    <input type="number" class="modal__input" placeholder="Year">
+                </div>
+                <div class="modal__form-wrapp">
+                    <p class="modal__caption">Appointment Details</p>
+                    <input type="date" class="modal__input" placeholder="Date">
+                    <input type="time" class="modal__input" placeholder="Time">
+                </div>
+            </div>
+            <div class="modal__btns">
+                <input type='submit' class="btn btn--primary" value="Submit"></input>
+                <input type='reset' class="btn btn--tertiary" value="Clear all fields"></input>
+                <p class="modal__info">
+                    Please note that the date and time you requested may not be available.
+                </p>
+            </div>
+        </form>
+    </div>  
+<!-- Modal End -->
+
+
+<!-- Header -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul class="navigation__wrapp">
+                <div class="logo">
+                    <p class="logo__text">RepairCar</p>
+                </div>
+                <li><a href="#" class="navigation__item">Services</a></li>
+                <li><a href="#" class="navigation__item">Our team</a></li>
+                <li><a href="#" class="navigation__item">Contacts</a></li>
+            </ul>
+            <div class="navigation__wrapp">
+            <button class="btn btn--primary btn--apoint">Appointment
+                <img src="/assets/icons/new_label_black_24dp.svg" alt="" class="btn__icon">
+
+            </button>
+            </div>
+        </nav>
+
+    </header>
+<!-- Header End -->
+
+<!-- Hero Section -->
+    <div class="hero" style="background: url('/assets/img/bg.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="hero__inner">
+            <div class="hero__text-wrapp">
+                <h1 class="hero__title">Repair Car</h1>
+                <p class="hero__subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni accusantium atque suscipit porro magnam mollitia, excepturi qui est cumque voluptatem distinctio, dolores placeat incidunt! Dolorum ratione officia ad! Totam.
+                </p>
+                <div class="hero__btn-wrapp">
+                    <button class="btn btn--primary btn--apoint">Request Appointment
+                        <img src="/assets/icons/new_label_black_24dp.svg" alt="" class="btn__icon">
+                    </button>
+                    <button class="btn btn--tertiary">Our services</button>
+                </div>
+                <div class="hero__contacts">
+                    <div class="contacts">
+                        <p class="contacts__title">Phone:</p>
+                        <p class="contacts__content"><i class="bi bi-telephone"></i> 00 567 892 243</p>
+                        <p class="contacts__title">E-Mail:</p>
+                        <p class="contacts__content"><i class="bi bi-envelope"></i> mail@example.com</p>
+                    </div>
+                    <div class="contacts">
+                        <p class="contacts__title">Opening Hours:</p>
+                        <p class="contacts__content"><span><i class="bi bi-stopwatch"></i> Mon-Fri: </span> 7:00 AM - 6:00 PM</p>
+                        <p class="contacts__content"><span><i class="bi bi-stopwatch"></i> Saturday: </span> 9:00 AM - 5:00 PM</p>
+                        <p class="contacts__content"><span><i class="bi bi-stopwatch"></i> Sunday: </span> Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="/assets/img/2-2-engine-picture.png" alt="">
+                <h3 class="hero__aditional">20 YEARS <span>experience</span></h3>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Main -->
+    <main class="main">
+        <div class="car">
+            <div class="car__wrapp">
+                <img src="/assets/img/car/car.png" alt="">
+                <img src="/assets/img/car/dor1.png" class="car__item car__dor1" alt="">
+                <img src="/assets/img/car/dor2.png" class="car__item car__dor2" alt="">
+                <img src="/assets/img/car/light1.png" class="car__item car__light1" alt="">
+                <img src="/assets/img/car/light2.png" class="car__item car__light2" alt="">
+                <img src="/assets/img/car/whels1.png" class="car__item car__whels1" alt="">
+                <img src="/assets/img/car/whels2.png" class="car__item car__whels2" alt="">
+            </div>
+        </div>
+<!-- Services Cards Section -->
+        <div class="section">
+            <h3 class="section__title"><i class="bi bi-gear"></i> Our Services</h3>
+            <p class="section__subtitle">When you need complete car repair from the experts, turn to RepairCar.
+                The experts at RepairCar have years of experience in a range of auto repair services.</p>
+        </div>
+        <section class="services">
+            <div class="services__item" style="background-image: linear-gradient(90deg, #1d2128fa, #1d2128c4), url('/assets/img/bg1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                <div class="services__content">
+                    <h4 class="services__title">Oil Changes</h4>
+                    <p class="services__text">
+                        Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine.                    
+                    </p>
+                    <button class="btn btn--tertiary services__btn btn--apoint">Request Appointment</button>
+                </div>
+            </div>
+
+            <div class="services__item" style="background-image: linear-gradient(90deg, #1d2128fa, #1d2128c4), url('/assets/img/bg4.webp'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                <div class="services__content">
+                    <h4 class="services__title">Steering & Suspension</h4>
+                    <p class="services__text">
+                        Utilizing the latest diagnostic equipment our Midas ASE-certified technicians can repair and/or maintain your steering system, car suspension, and wheel alignment to keep you and your vehicle on the road with a smooth ride.                    </p>
+                    <button class="btn btn--tertiary services__btn btn--apoint">Request Appointment</button>
+                </div>
+            </div>
+
+        </section>
+
+<!-- How To Section -->
+        <div class="section">
+            <h3 class="section__title">How it Works ?</h3>
+            <p class="section__subtitle">These few steps will help you understand how our service works </p>
+        </div>
+        <section class="faq">
+            <div class="faq__item">
+                <p class="faq__number">1</p>
+                <p class="faq__text">Make an Appointment</p>
+                <div style="background-image: radial-gradient(#1d212821, #1d2128), url('/assets/img/faq.jpeg'); background-position: center; background-size: cover; background-repeat: no-repeat;" class="faq__img"></div>
+            </div>
+
+            <div class="faq__item">
+                <p class="faq__number">2</p>
+                <p class="faq__text">Select Services</p>
+                <div style="background-image: radial-gradient(#1d212821, #1d2128), url('/assets/img/faq2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;" class="faq__img"></div>
+            </div>
+
+            <div class="faq__item">
+                <p class="faq__number">3</p>
+                <p class="faq__text">Select Quote, Confirm Request</p>
+                <div style="background-image: radial-gradient(#1d212821, #1d2128), url('/assets/img/faq3.png'); background-position: center; background-size: cover; background-repeat: no-repeat;" class="faq__img"></div>
+            </div>
+
+            <div class="faq__item">
+                <p class="faq__number">4</p>
+                <p class="faq__text">Get Your Car</p>
+                <div style="background-image: radial-gradient(#1d212821, #1d2128), url('/assets/img/faq4.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;" class="faq__img"></div>
+            </div>
+        </section>
+        
+<!-- All Servcies Section -->
+        <section class="serviceall" style="background-image: radial-gradient(#1d212890, #1d2128), url('/assets/img/bg5.jpg');  background-attachment: fixed; background-position: center; background-size: cover;">
+            <div class="serviceall__content">
+                <div>
+                    <h1 class="serviceall__title">All Services That We Offer</h1>
+                    <p class="serviceall__text">
+                        We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes everything from struts, shocks, and tie rod ends to ball joints, springs, and basically everything that is included in repairing the front end of the vehicle.
+                    </p>
+                </div>
+                <button class="btn btn--primary btn--apoint">Request Appointment
+                    <img src="/assets/icons/new_label_black_24dp.svg" alt="" class="btn__icon">
+                </button>
+            </div>  
+            <ul class="serviceall__list">
+                <li class="serviceall__item">
+                    FREE Loaner Cars
+                </li>
+                <li class="serviceall__item">
+                    General Auto Repair & Maintenance
+                </li>
+                <li class="serviceall__item">
+                    Air Conditioning A/C Repair
+                </li>
+                <li class="serviceall__item">
+                    Vehicle Preventative Maintenance
+                </li>
+                <li class="serviceall__item">
+                    Oil Change
+                </li>
+                <li class="serviceall__item">
+                    Brake Job / Brake Service
+                </li>
+                <li class="serviceall__item">
+                    Steering and Suspension Work
+                </li>
+                <li class="serviceall__item">
+                    Engine Cooling System Flush & Repair
+                </li>
+                <li class="serviceall__item">
+                    Manufacturer Recommended Service
+                </li>
+                <li class="serviceall__item">
+                    Computer Diagnostic Testing
+                </li>
+                <li class="serviceall__item">
+                    Fuel System Repair
+                </li>
+                <li class="serviceall__item">
+                    Transmission Repair & Replacement
+                </li>
+            </ul>
+        </section>
+        
+<!-- Teams Section -->
+        <div class="section">
+            <h3 class="section__title">Our team</h3>
+        </div>
+        <section class="team autoplay">
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team2.jpeg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team3.jpeg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team4.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+            <div class="team__item">
+                <img src="/assets/img/team.jpg" class="team__img" alt="">
+                <h5 class="team__name">John Doe</h5>
+                <p class="team__title">Electrician</p>
+            </div>
+        </section>
+
+<!-- Statistics Section -->
+        <section class="statistics" style="background-image: radial-gradient(#1d212890, #1d2128), url('/assets/img/section-bg.webp');  background-attachment: fixed; background-position: center; background-size: cover;">
+            <div class="statistics__item">
+                <div class="statistics__icon">
+
+                </div>
+                <div class="statistics__content">
+                    <p class="statistics__count">20</p>
+                    <p class="statistics__title">Years of experience</p>
+                </div>
+            </div>
+
+            <div class="statistics__item">
+                <div class="statistics__icon">
+
+                </div>
+                <div class="statistics__content">
+                    <p class="statistics__count">3.5k</p>
+                    <p class="statistics__title">Vehicle Repaired</p>
+                </div>
+            </div>
+
+            <div class="statistics__item">
+                <div class="statistics__icon">
+
+                </div>
+                <div class="statistics__content">
+                    <p class="statistics__count">54</p>
+                    <p class="statistics__title">Technicians & Workers</p>
+                </div>
+            </div>
+
+            <div class="statistics__item">
+                <div class="statistics__icon">
+
+                </div>
+                <div class="statistics__content">
+                    <p class="statistics__count">100%</p>
+                    <p class="statistics__title">Satisfied Customers</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Main End -->
+
+<!-- Footer -->
+    <footer class="footer">
+        <h5 class="footer__copyright">
+            © 2022 RepairCar, All Rights Reserved
+        </h5>
+        <ul class="social">
+            <li class="social__icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="26" height="26"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M80.625,10.75c-38.52723,0 -69.875,31.34777 -69.875,69.875c0,38.52724 31.34777,69.875 69.875,69.875c38.52724,0 69.875,-31.34776 69.875,-69.875c0,-38.52723 -31.34776,-69.875 -69.875,-69.875zM80.625,21.5c32.7175,0 59.125,26.4075 59.125,59.125c0,29.73808 -21.84861,54.19101 -50.39062,58.41114v-41.32031h16.69189l2.62451,-16.94385h-19.31641v-9.28027c0,-7.04125 2.2916,-13.29053 8.88135,-13.29053h10.58203v-14.80225c-1.85975,-0.24725 -5.78854,-0.79785 -13.22754,-0.79785c-15.523,0 -24.62842,8.20225 -24.62842,26.875v11.2749h-15.95703v16.96484h15.97803v41.17334c-28.09758,-4.59889 -49.48779,-28.8407 -49.48779,-58.26416c0,-32.7175 26.4075,-59.125 59.125,-59.125z"></path></g></g></svg>
+                </a>
+            </li>
+
+            <li class="social__icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="26" height="26"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M51.31446,10.75c-22.33984,0 -40.56446,18.22461 -40.56446,40.56446v58.66308c0,22.29785 18.22461,40.52246 40.56446,40.52246h58.66308c22.29785,0 40.52246,-18.2246 40.52246,-40.56445v-58.62109c0,-22.33984 -18.2246,-40.56446 -40.56445,-40.56446zM51.31446,21.5h58.62109c16.54492,0 29.81445,13.26953 29.81445,29.81446v58.62109c0,16.54492 -13.26953,29.81445 -29.77246,29.81445h-58.66308c-16.54493,0 -29.81446,-13.26953 -29.81446,-29.77246v-58.66308c0,-16.54493 13.26953,-29.81446 29.81446,-29.81446zM123.625,32.25c-2.98145,0 -5.375,2.39355 -5.375,5.375c0,2.98145 2.39355,5.375 5.375,5.375c2.98145,0 5.375,-2.39355 5.375,-5.375c0,-2.98145 -2.39355,-5.375 -5.375,-5.375zM80.625,43c-20.70215,0 -37.625,16.92285 -37.625,37.625c0,20.70215 16.92285,37.625 37.625,37.625c20.70215,0 37.625,-16.92285 37.625,-37.625c0,-20.70215 -16.92285,-37.625 -37.625,-37.625zM80.625,53.75c14.90723,0 26.875,11.96777 26.875,26.875c0,14.90723 -11.96777,26.875 -26.875,26.875c-14.90723,0 -26.875,-11.96777 -26.875,-26.875c0,-14.90723 11.96777,-26.875 26.875,-26.875z"></path></g></g></svg>
+                </a>
+            </li>
+
+            <li class="social__icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="26" height="26"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M161.25,35.44141c-5.62695,2.43555 -11.2959,4.24121 -17.55273,4.8291c6.25683,-3.61133 11.2959,-9.7002 13.77344,-16.33496c-6.25684,3.61132 -12.51368,6.04688 -19.4004,7.26465c-6.29882,-6.04687 -14.44531,-9.7002 -23.22168,-9.7002c-16.92285,0 -30.73828,13.35352 -30.73828,29.73047c0,2.39355 0,4.8291 0.62989,6.67676c-32.33399,0 -54.50586,-18.22461 -69.53906,-36.40723c-3.14942,4.24121 -4.40919,9.7002 -4.40919,15.15918c0,10.28809 5.66895,19.4004 13.81544,24.85938c-5.03906,-0.58789 -10.03614,-1.80566 -13.81544,-3.61132c0,0 0,0 0,0.58789c0,14.57129 10.66602,26.66504 24.48145,29.10059c-2.51953,0.58789 -5.03906,1.21777 -8.18848,1.21777c-1.84766,0 -3.7373,0 -5.62695,-0.5879c3.77929,12.13575 21.29004,26.07716 35.06348,26.07716c-10.66602,7.85253 -20.57618,14.69726 -40.39649,14.69726c-2.51953,0 -0.50391,0 -5.375,0c13.77344,8.48243 30.1084,10.75 47.03125,10.75c57.06739,0 87.80567,-45.47754 87.80567,-84.9082c0,-1.21778 0,-2.39356 0,-3.61133c6.25683,-4.2832 11.2959,-9.7002 15.66308,-15.78906"></path></g></g></svg>
+                </a>
+            </li>
+        </ul>
+        
+    </footer>
+<!-- Footer End-->
+
+    <!-- Scripts -->
+<script type="text/javascript" src="/assets/incl/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
